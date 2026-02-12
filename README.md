@@ -7,15 +7,11 @@ cat > README.md << 'EOF'
 # 📸 PixelParlour
 
 <div align="center">
-  <img src="https://img.shields.io/badge/Flask-2.3.3-black?style=for-the-badge&logo=flask">
-  <img src="https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python">
-  <img src="https://img.shields.io/badge/SQLite-3-07405E?style=for-the-badge&logo=sqlite">
-  <img src="https://img.shields.io/badge/Pillow-10.0.0-green?style=for-the-badge&logo=python">
-  <br>
-  <img src="https://img.shields.io/badge/license-MIT-orange?style=for-the-badge">
-  <img src="https://img.shields.io/badge/contributions-welcome-brightgreen?style=for-the-badge">
+![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Python](https://img.shields.io/badge/python-3.8+-yellow)
+![Flask](https://img.shields.io/badge/flask-2.0+-black)
 </div>
-
 <br>
 
 <p align="center">
@@ -69,18 +65,24 @@ git clone https://github.com/yourusername/pixelparlour.git
 cd pixelparlour
 
 # 2. Create virtual environment
+```bash
 python -m venv venv
-
+```
 # 3. Activate virtual environment
 # On Windows:
+```bash
 venv\Scripts\activate
+```
 # On macOS/Linux:
+```bash
 source venv/bin/activate
-
+```
 # 4. Install dependencies
+``bash
 pip install -r requirements.txt
-
+```
 # 5. Run the application
+``bash
 python run.py
-
+```
 <img width="1347" height="673" alt="image" src="https://github.com/user-attachments/assets/016eefcb-a7ab-4c54-a2fe-c464e7a2144c" />
