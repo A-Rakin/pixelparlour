@@ -72,3 +72,5 @@ pip install -r requirements.txt
 python run.py
 ```
 <img width="1347" height="673" alt="image" src="https://github.com/user-attachments/assets/016eefcb-a7ab-4c54-a2fe-c464e7a2144c" />
+<img width="1349" height="593" alt="image" src="https://github.com/user-attachments/assets/141a5e95-0988-428d-82bb-41f582703971" />
+<img width="1349" height="546" alt="image" src="https://github.com/user-attachments/assets/daec4308-ffd3-4575-a6e4-4af48b6cc0bd" />
