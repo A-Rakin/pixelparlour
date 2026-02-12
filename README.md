@@ -1,37 +1,23 @@
-#!/bin/bash
-
-# PixelParlour - README.md Generator
-# Run this script to create a professional README for your Flask Gallery App
-
-cat > README.md << 'EOF'
 # 📸 PixelParlour
 
-<div align="center">
 ![Version](https://img.shields.io/badge/version-1.0.0-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Python](https://img.shields.io/badge/python-3.8+-yellow)
 ![Flask](https://img.shields.io/badge/flask-2.0+-black)
-</div>
-<br>
 
-<p align="center">
-  <b>A beautiful, feature-rich photo gallery web application built with Flask</b><br>
-  Upload, manage, and share your memories with titles, captions, and automatic thumbnail generation.
-</p>
+A beautiful, feature-rich photo gallery web application built with Flask
+Upload, manage, and share your memories with titles, captions, and automatic thumbnail generation.
 
----
 
 ## ✨ Features
 
-<div align="center">
+
   
   | 🖼️ | 📝 | 🗑️ | ⚡ |
   |---|---|---|---|
   | **Image Upload** | **Titles & Captions** | **Delete Photos** | **Thumbnails** |
   | Drag & drop support | Add descriptions | Secure deletion | Auto-generated |
   | Multiple formats | Rich text | With confirmation | Optimized sizes |
-
-</div>
 
 ### ✅ Complete Feature List
 
