@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %}{{ photo.title }} - PixelParlour{% endblock %}
+
+{% block content %}
+<div class="single-photo-container">
+    <div class="photo-card">
+        <div class="photo-header">
+            <h1>{{ photo.title }}</h1>
+            <div class="photo-meta">
+                <span>Uploaded: {{ photo.upload_date.strftime('%B %d, %Y') }}</span>
+                <span>Views: {{ photo.views }}</span>
+            </div>
+        </div>
+
+        <div class="photo-display">
+            <img src="{{ url_for('thumbnail_file', filename=photo.thumbnail_filename) }}">
+                 alt="{{ photo.title }}">
+        </div>
+
+        <div class="photo-caption">
+            <h3>Caption</h3>
+            <p>{{ photo.caption or 'No caption provided.' }}</p>
+        </div>
+
+        <div class="photo-actions">
+            <a href="{{ url_for('gallery') }}" class="btn">← Back to Gallery</a>
+            <form action="{{ url_for('delete_photo', id=photo.id) }}" method="POST"
+                  onsubmit="return confirm('Delete this photo permanently?');">
+                <button type="submit" class="btn-delete">🗑️ Delete Photo</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

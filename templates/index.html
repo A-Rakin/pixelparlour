@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title %}PixelParlour - Home{% endblock %}
+
+{% block content %}
+<div class="hero">
+    <h1>Welcome to PixelParlour</h1>
+    <p>Share your memories with titles and captions</p>
+    <a href="{{ url_for('upload') }}" class="btn-large">📤 Upload Your First Photo</a>
+</div>
+
+<section class="recent-photos">
+    <h2>Recent Uploads</h2>
+    {% if photos %}
+    <div class="gallery-grid">
+        {% for photo in photos %}
+        <div class="gallery-item">
+            <a href="{{ url_for('view_photo', id=photo.id) }}">
+                <img src="{{ url_for('thumbnail_file', filename=photo.thumbnail_filename) }}">
+                     alt="{{ photo.title }}">
+                <div class="caption">
+                    <h3>{{ photo.title }}</h3>
+                    <p>{{ photo.caption[:50] }}{% if photo.caption|length > 50 %}...{% endif %}</p>
+                    <span class="views">👁️ {{ photo.views }}</span>
+                </div>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="view-all">
+        <a href="{{ url_for('gallery') }}" class="btn">View Full Gallery →</a>
+    </div>
+    {% else %}
+    <p class="empty-state">No photos yet. Be the first to upload!</p>
+    {% endif %}
+</section>
+{% endblock %}
